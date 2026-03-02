@@ -1,45 +1,131 @@
-<!doctype html> <!---prepara o navegador para processar o HTML-->
-<html lang="pt-br">
-    <head> <!-- passagem de metadados -->
-        <meta charset="utf-8">
-        <meta name="viewport content="width=device-width, initialscale=1">
-        <title>workshop CSS Básico</title>
-        </head>
-        <body>
-            <header>
-<h1> whorkshop CSS Básico</h1>
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Site do Batman</title>
+    <style>
+      * {
+      }
+      body {
+        margin: 0;
+        color: aliceblue;
+        background-color:black;
+        font-family: system-ui, arial, sans-rerif;
+        line-height: 1.5;
+      }
+      .container{
+        width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+      }
 
-<nav>
-    <ul>
+      .box{
+background: Rgba(0,0,0,0.75);
+border:1px solid rgba(240,240,255,0.35);
+border-radius: 12px;
+padding:14px;
+margin-bottom:12px;
+      }
+      H1,h2 {
+     COLOR: rgb(255,211,0);
+     margin: 0 0 8px;
+      }
+      .subtitulo{
+        margin:0;
+        color:#d1d5db;
+      }
+      p{
+        color:aqua;
+      }
+      #apresentacao{
+        border-left: 8 px solid rgb(255,211,0);
+      }
+      .nav{
+list-style:none;
+      }
+      .nav{
+        list-style: none;
+        margin:0;
+    padding: 0;
+display: flex;
+gap: 10px;
+flex-wrap:nowrap
+      }
 
-        <li><a href="#">início</a></li>
-    </ul>
-</nav>
 
+    </style>
+  </head>
+  <body id="topo">
+    <div class="container" id="pagina">
+      <header class="box" id="cabecalho">
+        <div class="headre-interno">
+          <h1 class="titulo">Site do Batman</h1>
+          <p class="subtitulo">
+            Gotham Cite: <strong>vigilância</strong>, <em> estratégia</em> e
+            tecnologia.
+          </p>
+        </div>
+      </header>
+      <nav class="box" id="menu">
+        <ul class="nav">
+          <li><a class="nav-link" href="#apresentacao">Quem é?</a></li>
+          <li><a class="nav-link" href="#galeria">Galeria?</a></li>
+          <li><a class="nav-link" href="#rodape">Rodapé</a></li>
+        </ul>
+      </nav>
+      <main id="conteudo">
+        <section class="box" id="apresentacao">
+          <h2>Quem é o Batman?</h2>
+          <p>
+            Batman (Bruce Wayne) é um personagem da DC Comics e atua como
+            Justiceiro (sem ninguém ter pedido iddo a ele) de Gotham. Ele não
+            tem superpoderes:sua força está em <strong>treinamento</strong>,
+            <em>tecnologia</em> e riqueza(muita riqueza) além de farmar muita Aura.
+          </p>
+          <p>
+            Em várias historias,Gotham representa problemas sociais:
+            desigualdade, corrupção e violência urbana. Alguns quadrinhos usam o
+            Batman como forma de <strong>crítica social</strong>,mostrando como
+            falhas nas instituições,interesses econômicos e autoritarismo afetam
+            principalmente quem tem menos direitos e oportunidades.
+          </p>
+        </section>
+        <section class="box" id="galeria">
+          <h2>Galeria</h2>
+          <div class="gallery" id="galeria-imagens">
+            <img
+              class="bat-img"
+              src="batman-no-brasil-dia-do-batman-day - Copia.jpg"
+              alt="batman raivoso."
+              width="220"
+              height="120"
+            />
+            <img
+              class="bat-img"
+              src="apps.5632.14198877265016337.3eb786db-0717-4a5b-8b17-0de6486167d3.jfif"
+              alt="batman raivoso."
+              width="220"
+              height="120"
+            />
+            <img
+              class="bat-img"
+              src="Batman_1_preview_2-1-scaled-e1740156646652-1024x565.jpg"
+              alt="batman raivoso."
+              width="220"
+              height="120"
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="box" id=" rodape">
+        <p>
+          <a class="link" href="#topo">topo</a>
+        </p>
+        <p>Exemplo de website para treino de HTML e CSS.</p>
+      </footer>
+    </div>
+  </body>
 
-            </header>
-            <main>
-            </section>
-<h2> introdução</h2>
-
-
-<P> Este é um exemplo de página estrutural com <strong><HTML>semântico</strong>para aplicar estilos com CSS. Você tambèm pode usar</em> ênfase</em> no texto</P>
-</section>
-<section>
-</h2> lista de Tópicos</h2>
-
-</ul>
-</li> Estrutura básica</li>
-</li>navegação</li>
-</li>imagem</li>
-</li>tabela</li>
-</ul>
-<selection>
-                </main>
-                <footer>
-        </body>
-
-
-
-
+    
 </html>
